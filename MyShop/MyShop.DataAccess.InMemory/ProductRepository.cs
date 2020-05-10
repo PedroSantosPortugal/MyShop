@@ -50,6 +50,12 @@ namespace MyShop.DataAccess.InMemory
         {
             return products.AsQueryable();
         }
+
+        public Product Find(string id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Delete(string Id)
         {
             Product productToDelete = products.Find(p => p.Id == Id);
